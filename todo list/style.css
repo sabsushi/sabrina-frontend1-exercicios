@@ -1,0 +1,124 @@
+/* Geral - Setup da página */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Layout Principal */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px 15px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    height: fit-content;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Zona de Input */
+.input-area {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border-color: #3498db;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#input-area button {
+    background: #27ae60;
+    color: white;
+}
+
+/* Lista de Itens */
+#lista {
+    margin-top: 10px;
+}
+
+.item {
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item strong {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+
+.data {
+    font-size: 0.75rem;
+    color: #95a5a6;
+}
+
+/* Botões de Ação */
+.btn-edit {
+    background: #3498db;
+    color: white;
+    margin-right: 4px;
+}
+
+.btn-delete {
+    background: #e74c3c;
+    color: white;
+}
+
+/* for the mobilr responsiveness */
+@media (max-width: 480px) {
+    .container {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
