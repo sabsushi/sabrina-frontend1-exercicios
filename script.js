@@ -53,5 +53,32 @@ async function editar(i) {
         Swal.fire({ title: 'Atualizado!', icon: 'info', timer: 1000, showConfirmButton: false });
     }
 }
+function remover(i) {
+    Swal.fire({
+        title: 'Tem certeza?',
+        text: "Você não poderá reverter esta ação!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#e74c3c', 
+        cancelButtonColor: '#95a5a6',
+        confirmButtonText: 'Sim, apagar!',
+        cancelButtonText: 'Cancelar'
+    }).then((result) => {
+        
+        if (result.isConfirmed) {
+            tarefas.splice(i, 1);
+            renderizar();
+            
+    
+            Swal.fire({
+                title: 'Removido!',
+                text: 'A tarefa foi excluída.',
+                icon: 'success',
+                timer: 1500,
+                showConfirmButton: false
+            });
+        }
+    });
+}
 
 renderizar();
