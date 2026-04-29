@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício Simples</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .aluno { border: 1px solid #ccc; padding: 10px; margin-top: 10px; background: #f9f9f9; }
+    </style>
+</head>
+<body>
+
+    <h2>Registo de Alunos</h2>
+    <form id="formAluno">
+        <input type="text" id="nome" placeholder="Nome" required><br><br>
+        <input type="number" id="f" placeholder="Nota Front" required><br>
+        <input type="number" id="b" placeholder="Nota Back" required><br>
+        <input type="number" id="d" placeholder="Nota Design" required><br><br>
+        <button type="submit">Guardar</button>
+    </form>
+
+    <div id="lista"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

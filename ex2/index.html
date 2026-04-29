@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios Local and Session Storage ex2</title>
+    <style>
+        body.light { background-color: white; color: black; }
+        body.dark { background-color: #333; color: white; }
+        section { border-bottom: 1px solid #ccc; padding: 20px 0; }
+    </style>
+</head>
+<body class="light">
+
+    <section>
+        <h2>Exercício A: guardar nome</h2>
+        <form id="formNome">
+            <input type="text" id="inputNome" placeholder="Digita o teu nome" required>
+            <button type="submit">guardar no localstorage</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Exercício B: toggle do theme</h2>
+        <button id="btnTema">Mudar Tema</button>
+        <p>Tema atual: <strong id="statusTema">light</strong></p>
+    </section>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+To perform the Lighthouse check, I opened the Chrome DevTools, navigated to the Lighthouse tab and then ran a navigation analysis.
+ This report allowed me to identify accessibility issues, SEO improvements such as adding meta descriptions, and performance bottlenecks caused by unoptimized images.
